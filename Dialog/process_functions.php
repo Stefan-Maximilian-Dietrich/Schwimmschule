@@ -1,6 +1,5 @@
 <?php
-require("read_functions.php");
-require("insert_functions.php");
+require(__DIR__. "/../Funktionen/all.php"); 
 
 function course_available($course)
 {

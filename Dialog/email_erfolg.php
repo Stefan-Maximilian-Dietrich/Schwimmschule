@@ -1,4 +1,4 @@
-<?php require("functions.php"); ?>
+<?php require(__DIR__. "/../Funktionen/all.php"); ?>
 <!DOCTYPE html>
 <html lang="de">
 
