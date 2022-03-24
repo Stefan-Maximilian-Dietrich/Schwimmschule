@@ -1,6 +1,5 @@
-<?php require(__DIR__. "/../Funktionen/read.php"); ?>
-<?php require(__DIR__. "/../Funktionen/insert.php"); ?>
-<?php require(__DIR__. "/../Funktionen/alt.php"); ?>
+<?php require(__DIR__. "/../Funktionen/all.php"); ?>
+
 
 
 <?php
