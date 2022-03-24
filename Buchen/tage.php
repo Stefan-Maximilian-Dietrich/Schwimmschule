@@ -11,7 +11,7 @@ if (isset($_SESSION["id"])) {
     <head>
         <title>Tage</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/../style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">

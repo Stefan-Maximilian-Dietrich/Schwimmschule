@@ -29,7 +29,7 @@ if ($_GET["page"] == "log") {
 <head>
     <meta charset="UTF-8">
     <title>Schwimmschule</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/../style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>

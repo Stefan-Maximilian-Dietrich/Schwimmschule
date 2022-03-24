@@ -11,7 +11,7 @@ if (isset($_SESSION["username"])) {
     <head>
         <meta charset="UTF-8">
         <title>Hinzufügen</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/../style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
     </head>

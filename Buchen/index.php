@@ -34,7 +34,7 @@ if ($_GET["page"] == "log") {
 <head>
     <meta charset="UTF-8">
     <title>Schwimmschule</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/../style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<link rel="icon" type="image/png" href= "/../Resourcen/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href= "/../Resourcen/favicon-16x16.png" sizes="16x16" />
