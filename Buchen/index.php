@@ -1,6 +1,5 @@
 <?php require("functions.php"); ?>
 <?php require("insert_functions.php"); ?>
-<?php require("read_functions.php"); ?>
 <?php require(__DIR__. "/../Funktionen/read.php"); ?>
 
 
@@ -91,9 +90,6 @@ if ($_GET["page"] == "log") {
     </head>
 
     <body class="align">
-
-
-        <?php echo __DIR__ ; ?>
 
 
         <?php
