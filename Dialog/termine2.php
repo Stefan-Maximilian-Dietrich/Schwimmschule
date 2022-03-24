@@ -16,29 +16,7 @@ session_start();
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <body>
-
-
-        <div class="grid align__item">
-            <div class="register">
-
-                <form action="termine2.php" method="post" class="form">
-
-
-                <h3>Nächster Mittwoch 20:30</h3> <br>
-                Am <?php echo date("d.m.Y", strtotime("30 March 2022")); ?>
-                    <input type="submit" class="theButton" name="monday" value="anmelden" <?php ?>>
-
-                <h3>Nächster Sonntag 20:30</h3> <br>
-                Am <?php echo date("d.m.Y", strtotime("3 April 2022")); ?>
-
-                    <input type="submit" class="theButton" name="wednesday" value="anmelden" <?php ?>>
-
-                </form>
-  
-            </div>
-        </div>
-    </body>
+ 
 
     </html>
     <?php
