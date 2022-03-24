@@ -102,7 +102,7 @@ if ($_GET["page"] == "log") {
 
 
                     <div class="logo">
-                        <img src="logo_schwimmschule.png" alt="logo" hight="30%" width="30%">
+                        <img src="TESTlogo_schwimmschule.png" alt="logo" hight="30%" width="30%">
                     </div>
 
                     <h2>Wilkommen</h2>
