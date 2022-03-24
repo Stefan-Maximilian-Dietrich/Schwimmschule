@@ -36,8 +36,8 @@ if ($_GET["page"] == "log") {
     <title>Schwimmschule</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href= "/../Resourcen/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href= "/../Resourcen/favicon-16x16.png" sizes="16x16" />
 
 </head>
 
@@ -52,8 +52,8 @@ if ($_GET["page"] == "log") {
         <title>Schwimmschule</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="/../Resourcen/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/../Resourcen/favicon-16x16.png" sizes="16x16" />
 
         <?php
         if ($verhalten == 1) {
