@@ -369,3 +369,20 @@ function insert_date_a($id, $date, $time_start, $time_end)
     
     $conection->query($sql);
 }
+
+function insert_Zoom_date($date, $username)
+{
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+    $name = $_SESSION["username"];
+    $sql = "UPDATE customer SET zoom = '$date' WHERE username = '$username'";
+
+    $conection->query($sql);
+}
