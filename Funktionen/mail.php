@@ -289,8 +289,7 @@ https://youtu.be/ItRtk_eP5EQ<br>
 	} else {
 		echo "Es gab einen Fehler " . $mail->ErrorInfo;
 	}
-}
-?>
+
 }
 
 ?>
