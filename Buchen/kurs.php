@@ -48,7 +48,6 @@ if (isset($_SESSION["id"])) {
                         </select>
                     </div>
 					<?php
-					echo read_TableAttributeById("customer", "zoom", "username", "stefan.maximilian.dietrich@gmail.com");
 					?>
                     <br>
                     <br>
