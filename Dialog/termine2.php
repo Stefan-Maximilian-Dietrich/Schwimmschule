@@ -46,7 +46,7 @@ session_start();
         insert_Zoom_date(date('Y-m-d',strtotime("30 March 2022")), $_SESSION["mail"]);
         $_SESSION["tag"] = date('Y-m-d',strtotime("30 March 2022"))
         ?>
-            <meta http-equiv="refresh" content="0; URL= zoom_erfolg.php" />
+            <meta http-equiv="refresh" content="0; URL= /../Dialog/zoom_erfolg.php" />
         <?php
     ?>
         
@@ -55,7 +55,7 @@ session_start();
         insert_Zoom_date(date('Y-m-d',strtotime("3 April 2022")), $_SESSION["mail"]);
         $_SESSION["tag"] = date('d.m.Y',strtotime("3 April 2022"))
     ?>
-        <meta http-equiv="refresh" content="0; URL= zoom_erfolg.php" />
+        <meta http-equiv="refresh" content="0; URL= /../Dialog/zoom_erfolg.php" />
     <?php
     } 
     ?>
