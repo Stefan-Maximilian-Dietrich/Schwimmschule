@@ -8,7 +8,7 @@ $rechnungs_datum = date("d.m.Y");
 $pdfAuthor = "schwimmschule-allgaeu.de";
 
 $rechnungs_header = '
-<img src="/../Resourcen/logo_schwimmschule.png">
+<img src="logo.png">
 Schwimmschule Allgäu
 Alfrd Hartmann
 schwimmschule-allgaeu.de';
