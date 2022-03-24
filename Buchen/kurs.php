@@ -1,5 +1,4 @@
-<?php require("functions.php"); ?>
-<?php require("mail_functions.php"); ?>
+<?php require(__DIR__. "/../Funktionen/all.php"); ?>
 
 
 

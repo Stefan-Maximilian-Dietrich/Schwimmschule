@@ -1,5 +1,4 @@
-<?php require("functions.php"); ?>
-<?php require("process_functions.php"); ?>
+<?php require(__DIR__. "/../Funktionen/all.php"); ?>
 
 <?php
 session_start();
