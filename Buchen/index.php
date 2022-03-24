@@ -93,7 +93,7 @@ if ($_GET["page"] == "log") {
     <body class="align">
 
 
-
+        <?php echo __DIR__ ; ?>
 
 
         <?php
