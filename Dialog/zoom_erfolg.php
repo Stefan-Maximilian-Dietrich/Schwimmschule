@@ -38,7 +38,8 @@
         $mail->Password = "tqjmfjeqkjvomwdp";
 
         $mail->setFrom("schwimmschule.dialog@gmail.com", "Schwimmschule ");
-        $mail->addAddress($_SESSION["mail"], "Tutorialwork");
+        $mail->addAddress($_SESSION["mail"], "Kunde");
+        $mail->addAddress("schwimmschule.test@gmail.com", "Test");
 
         $mail->isHTML(true);
         $mail->Subject = "Zoom Link";
