@@ -1,4 +1,4 @@
-<?php require(__DIR__. "/../Funktionen/all.php"); ?>
+<?php //require(__DIR__. "/../Funktionen/all.php"); ?>
 <?php
 session_start();
 
@@ -41,3 +41,21 @@ session_start();
     </body>
 
     </html>
+    <?php
+    if (isset($_POST['monday'])) {
+		insert_Zoom_date(date('Y-m-d',strtotime("30 March 2022")), $_SESSION["mail"]);
+		$_SESSION["tag"] = date('Y-m-d',strtotime("30 March 2022"))
+		?>
+            <meta http-equiv="refresh" content="0; URL= zoom_erfolg.php" />
+		<?php
+    ?>
+        
+    <?php
+    } elseif (isset($_POST['wednesday'])) {
+		insert_Zoom_date(date('Y-m-d',strtotime("3 April 2022")), $_SESSION["mail"]);
+		$_SESSION["tag"] = date('d.m.Y',strtotime("3 April 2022"))
+    ?>
+        <meta http-equiv="refresh" content="0; URL= zoom_erfolg.php" />
+    <?php
+    } 
+    ?>
