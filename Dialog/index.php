@@ -2,78 +2,79 @@
 <!DOCTYPE html>
 <html lang="de">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Index</title>
-        <link rel="stylesheet" href="./style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-    </head>
+</head>
 
 <body>
-	<div class="grid align__item">
-		<div class="register">
-			        <div class="logo">
-                        <img src="logo_schwimmschule.png" alt="logo" hight="30%" width="30%">
-                    </div>
-			<h2>Wilkommen</h2>
-			Hi :) 
-Schön dass Du Dich für die Dich für die<br>
-"ICH-BIN-ANDERS"-Schwimmschulen mit dem Konzept der  Wir-machen-Wassermenschen interessierst.<br><br>
-#angstfreiSchwimmenLernen ist ein<br>  Schwimmkurskonzept welches DEIN<br> SCHWIMMLEHRER, der Dir diesen Link<br> geschickt hat, vertritt und verbreitet.<br><br>
-Dieses Konzept wurde über 8 Jahre<br> entwickelt und findet immer mehr<br> Anerkennung und entsprechend Anhänger.<br>
-Immer mehr Schwimmlehrer gliedern sich<br>
-deshalb diesem kindgerecht, spielerischem<br>
-Schwimmkonzept mit den Kernaussagen,<br>
-- Schwimmen ist Auftrieb<br>
-- Schwimmen ist Atmung<br>
-an.<br><br>
-Da Schwimmlehrer zumeist Einzelpersonen<br>
-sind, und ihre Kapazität schon stark mit<br>Schwimmkursen gefüllt ist, haben wie die<br>
-Kommunikation- den Dialog mit seinen<br> Basissinformationen- zentralisiert.<br>
-Eine direkte Kommunikation mit deinem<br> Schwimmlehrer ist natürlich weiterhin über<br>
-die Dir bekannten Kanäle möglich.<br>
+    <div class="grid align__item">
+        <div class="register">
+            <div class="logo">
+                <img src="logo_schwimmschule.png" alt="logo" hight="30%" width="30%">
+            </div>
+            <h2>Wilkommen</h2>
+            Hi :)
+            Schön dass Du Dich für die Dich für die<br>
+            "ICH-BIN-ANDERS"-Schwimmschulen mit dem Konzept der Wir-machen-Wassermenschen interessierst.<br><br>
+            #angstfreiSchwimmenLernen ist ein<br> Schwimmkurskonzept welches DEIN<br> SCHWIMMLEHRER, der Dir diesen Link<br> geschickt hat, vertritt und verbreitet.<br><br>
+            Dieses Konzept wurde über 8 Jahre<br> entwickelt und findet immer mehr<br> Anerkennung und entsprechend Anhänger.<br>
+            Immer mehr Schwimmlehrer gliedern sich<br>
+            deshalb diesem kindgerecht, spielerischem<br>
+            Schwimmkonzept mit den Kernaussagen,<br>
+            - Schwimmen ist Auftrieb<br>
+            - Schwimmen ist Atmung<br>
+            an.<br><br>
+            Da Schwimmlehrer zumeist Einzelpersonen<br>
+            sind, und ihre Kapazität schon stark mit<br>Schwimmkursen gefüllt ist, haben wie die<br>
+            Kommunikation- den Dialog mit seinen<br> Basissinformationen- zentralisiert.<br>
+            Eine direkte Kommunikation mit deinem<br> Schwimmlehrer ist natürlich weiterhin über<br>
+            die Dir bekannten Kanäle möglich.<br>
 
-Wenn Du HIER jetzt Deine E-mail-Adresse<br>
-eingibst trittst Du in unser Dialog-System ein.<br><br>
+            Wenn Du HIER jetzt Deine E-mail-Adresse<br>
+            eingibst trittst Du in unser Dialog-System ein.<br><br>
 
-Was heisst Dialog-System?<br>
-Aufgrund der vielen Nachfragen und der<br> Komplexität der Gedankenbasis/Grundlagen,<br>
-werden hier die wirklich relevanten Dingen<br>
-für Deine Entscheidung-FÜR bzw. gegen<br> diese Art des Schwimunterrichts, bis hin zu<br>
-einem ZOOM-Call, besprochen.<br> 
-Wir sind der Meinung dass Du am Ende des<br>
-"Dialogs" sehr genau weisst ob Du Dich<br> für unsere Art des "Schwimmen-lernens"<br> entscheiden willst. Entsprechend findest Du<br>
-natürlich am Ende des Dialog-Prozesses<br> Zugang zu unserem Buchungssystem.<br><br>
-Wir würden uns freuen wenn Du "eintrittst".
-	
-    <?php
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-    
-    require 'PHPMailer/src/Exception.php';
-    require 'PHPMailer/src/PHPMailer.php';
-    require 'PHPMailer/src/SMTP.php';
+            Was heisst Dialog-System?<br>
+            Aufgrund der vielen Nachfragen und der<br> Komplexität der Gedankenbasis/Grundlagen,<br>
+            werden hier die wirklich relevanten Dingen<br>
+            für Deine Entscheidung-FÜR bzw. gegen<br> diese Art des Schwimunterrichts, bis hin zu<br>
+            einem ZOOM-Call, besprochen.<br>
+            Wir sind der Meinung dass Du am Ende des<br>
+            "Dialogs" sehr genau weisst ob Du Dich<br> für unsere Art des "Schwimmen-lernens"<br> entscheiden willst. Entsprechend findest Du<br>
+            natürlich am Ende des Dialog-Prozesses<br> Zugang zu unserem Buchungssystem.<br><br>
+            Wir würden uns freuen wenn Du "eintrittst".
 
-    if(isset($_POST["submit"])){
-		add($_POST["name"]);
-		
-        $mail = new PHPMailer();
-        $mail->IsSMTP();
-        $mail->Mailer = 'smtp';
-        $mail->Host = 'smtp.gmail.com'; 
-        $mail->Port = 465;
-        $mail->SMTPSecure = 'ssl';
-        $mail->SMTPAuth = true;
-        $mail->Username = "schwimmschule.dialog@gmail.com";
-        $mail->Password = "tqjmfjeqkjvomwdp";
+            <?php
 
-        $mail->setFrom("schwimmschule.dialog@gmail.com", "Schwimmschule ");
-        $mail->addAddress($_POST["name"], "Alfred Hartmann");
+            use PHPMailer\PHPMailer\PHPMailer;
+            use PHPMailer\PHPMailer\Exception;
 
-        $mail->isHTML(true);
-        $mail->Subject = "Anfrage Schwimmkurs /Zoom";
-        $mail->Body = "
+            require 'PHPMailer/src/Exception.php';
+            require 'PHPMailer/src/PHPMailer.php';
+            require 'PHPMailer/src/SMTP.php';
+
+            if (isset($_POST["submit"])) {
+                add($_POST["name"]);
+
+                $mail = new PHPMailer();
+                $mail->IsSMTP();
+                $mail->Mailer = 'smtp';
+                $mail->Host = 'smtp.gmail.com';
+                $mail->Port = 465;
+                $mail->SMTPSecure = 'ssl';
+                $mail->SMTPAuth = true;
+                $mail->Username = "schwimmschule.dialog@gmail.com";
+                $mail->Password = "tqjmfjeqkjvomwdp";
+
+                $mail->setFrom("schwimmschule.dialog@gmail.com", "Schwimmschule ");
+                $mail->addAddress($_POST["name"], "Alfred Hartmann");
+
+                $mail->isHTML(true);
+                $mail->Subject = "Anfrage Schwimmkurs /Zoom";
+                $mail->Body = "
 <!DOCTYPE html>
 <html>
     <head>
@@ -211,9 +212,9 @@ zweiten Teil. Nimm Dir weitere 45 min Zeit. Je nach Fragen. Den Link dazu erh&au
 Wir sehen uns! ..per Zoom;)<br>
 <br>
 "
-.
-			"https://wassermenschen.org/Dialog/termine.php/?mail=" . $_POST["name"].
-"
+                    .
+                    "https://wassermenschen.org/Dialog/termine.php/?mail=" . $_POST["name"] .
+                    "
 <br>
 <br>
 Viele Gr&uuml;&szlig;e<br>
@@ -238,35 +239,35 @@ https://youtu.be/ItRtk_eP5EQ<br>
 </body>
 </html>
 ";
-		
-
-        if($mail->send()){
-			?>
-            <meta http-equiv="refresh" content="0; URL=email_erfolg.php" />
-			<?php
-        } else {
-            echo "Es gab einen Fehler ".$mail->ErrorInfo;
-        }
-    }
-    ?>
 
 
+                if ($mail->send()) {
+            ?>
+                    <meta http-equiv="refresh" content="0; URL=email_erfolg.php" />
+            <?php
+                } else {
+                    echo "Es gab einen Fehler " . $mail->ErrorInfo;
+                }
+            }
+            ?>
 
 
-	
-	
-	<form action="index.php" method="post" class="form">
-		<div class="form__field">
-			<input type="text" name="name" placeholder="E-mail">
-		</div>
-		<div class="form__field">
-			<input type="submit" name="submit">
-		</div>
-	</form>
-	
-	            </div>
+
+
+
+
+            <form action="index.php" method="post" class="form">
+                <div class="form__field">
+                    <input type="text" name="name" placeholder="E-mail">
+                </div>
+                <div class="form__field">
+                    <input type="submit" name="submit">
+                </div>
+            </form>
+
         </div>
-	
+    </div>
+
 </body>
 
 </html>
