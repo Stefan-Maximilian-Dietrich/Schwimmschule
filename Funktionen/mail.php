@@ -111,7 +111,7 @@ function mail_besaetigunh($name)
 	$mail->Password = "tqjmfjeqkjvomwdp";
 
 	$mail->setFrom("schwimmschule.dialog@gmail.com", "Schwimmschule ");
-	$mail->addAddress($_POST["name"], "Alfred Hartmann");
+	$mail->addAddress($name, "Alfred Hartmann");
 
 	$mail->isHTML(true);
 	$mail->Subject = "Anfrage Schwimmkurs /Zoom";
