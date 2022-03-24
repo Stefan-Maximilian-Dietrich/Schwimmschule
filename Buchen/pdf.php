@@ -204,6 +204,7 @@ $pdf->writeHTML($html, true, false, true, false, '');
 //Ausgabe der PDF
 
 //Variante 1: PDF direkt an den Benutzer senden:
+ob_end_clean();
 $pdf->Output($pdfName, 'I');
  
 //Variante 2: PDF im Verzeichnis abspeichern:
