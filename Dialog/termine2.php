@@ -35,6 +35,7 @@ session_start();
                     <input type="submit" class="theButton" name="wednesday" value="anmelden" <?php ?>>
 
                 </form>
+                <?php echo $_SESSION["mail"];?>
             </div>
         </div>
     </body>
