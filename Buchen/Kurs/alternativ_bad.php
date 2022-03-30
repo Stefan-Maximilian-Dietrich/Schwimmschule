@@ -44,7 +44,7 @@ if (isset($_SESSION["username"])) {
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     for ($i = 1; $i <= getN("bad"); $i++) {
                         if ($_POST[$i] == 1) {
-                            update_bad($_SESSION["id"], $i++);
+                            update_bad($_SESSION["id"], $i);
                         }
                     }
 
