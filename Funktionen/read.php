@@ -527,7 +527,9 @@ function print_table()
     
 }
 
-function get_bath($i, $attribiute) {
+
+
+function read_alternativbad($favorit_id, $bad_id) {
     global $severname;
     global $user;
     global $pw;
@@ -537,15 +539,10 @@ function get_bath($i, $attribiute) {
     if ($conection->connect_error) {
         die("Verbindunsfehler: $conection->connect_error");
     }
-
-    $id = $_SESSION["id"];
-    $course = getK($id);
-    $sql = "SELECT * FROM bad JOIN verfuegbar ON bad.s_name = verfuegbar.bath_name WHERE id = $i AND available = 1 AND course_name = '$course'";
+    $sql = "SELECT * FROM favorit_alternativ WHERE favorit_id = $favorit_id AND alternativ_id = $bad_id";
     $res = $conection->query($sql);
     $object = $res->fetch_object();
-    return $object->$attribiute;
+    return $object->verfuegbar;
 }
-
-
 
 ?>
