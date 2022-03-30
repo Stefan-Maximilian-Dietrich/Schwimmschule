@@ -1,4 +1,6 @@
 <?php require(__DIR__. "/../Funktionen/alt.php"); ?>
+<?php require(__DIR__. "/../Funktionen/process.php"); ?>
+
 
 
 
