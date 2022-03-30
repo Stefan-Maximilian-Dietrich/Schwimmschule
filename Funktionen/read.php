@@ -546,20 +546,6 @@ function get_bath($i, $attribiute) {
     return $object->$attribiute;
 }
 
-function read_alternativbad($favorit_id, $bad_id) {
-    global $severname;
-    global $user;
-    global $pw;
-    global $db;
 
-    $conection = new mysqli($severname, $user, $pw, $db);
-    if ($conection->connect_error) {
-        die("Verbindunsfehler: $conection->connect_error");
-    }
-    $sql = "SELECT * FROM favorit_alternativ WHERE favorit_id = $favorit_id AND alternativ_id = $bad_id";
-    $res = $conection->query($sql);
-    $object = $res->fetch_object();
-    return $object->verfuegbar;
-}
 
 ?>
