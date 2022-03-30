@@ -471,3 +471,5 @@ function monthly()
 {
     return price() * (1 - discount());
 }
+
+?>
