@@ -228,13 +228,4 @@ function cours_name($number, $student_name)
 }
 
 
-function cours_filter($kurs_id) {
-    $StudentAltersklasse = read_StudentAtributeByOrderId($_SESSION["id"], "altersklasse");
-    if(TRUE) {
-       return TRUE;
-    } else {
-        return FALSE;
-    }
-
-}
 ?>
