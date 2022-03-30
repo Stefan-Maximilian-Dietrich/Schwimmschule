@@ -361,11 +361,9 @@ Thema: Sommer-Schwimm-Kurse SCHWIMMSCHULE ALLGAEU<br>
 Uhrzeit: ". $_SESSION["tag"] ." 20:30 <br>
 <br>
 Zoom-Meeting beitreten<br>
-https://zoom.us/j/91386932573?pwd=VE0vdFdmdERpRERLalVRVWpxbTFZQT09<br>
+https://us05web.zoom.us/j/89358197421?pwd=NmJYTlQ3dGdqdjZ0U2pxVkFPYnhQZz09<br>
 <br>
-Meeting-ID: 913 8693 2573<br>
-Kenncode: SqJ16r<br>
-<br>
+
 <br>
 Zoom ..Klappe die II. ;)<br>
 HINTERGRUNDINFOS FÜR TECHNIKINTERESSIERTE<br>

@@ -84,7 +84,7 @@ if (isset($_SESSION["username"])) {
                 }
                 if (isset($_POST['Fertig'])) {
                     ?>
-                    <meta http-equiv="refresh" content="0; URL = /../kunden_bereich.php" />
+                    <meta http-equiv="refresh" content="0; URL = /../../kunden_bereich.php" />
                     <?php
                 }
                 ?>
