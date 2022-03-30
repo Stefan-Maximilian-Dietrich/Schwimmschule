@@ -1,4 +1,5 @@
 <?php require(__DIR__. "/../Funktionen/all.php"); ?>
+
 <?php
 session_start();
 if (isset($_SESSION["username"])) {
@@ -7,56 +8,56 @@ if (isset($_SESSION["username"])) {
     <html>
 
     <head>
-        <title>Bad</title>
+        <title>Kunde</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/../style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </head>
 
     <body>
-
         <div class="grid align__item">
             Wilkommen <?php echo $_SESSION["username"]; ?>
+
             <div class="register">
-                <form action="bad.php" method="post">
+                <h3>Für welches Kind willst du einen Kurs buchen?</h3>
 
-
-                    <h3>Was ist dein Favoritbad?</h3>
+                <form action="kind_waelen.php" method="post">
                     <div class="box">
-                        <select name="favoritbad">
+                        <select name="student_name">
                             <?php
-                            for ($i = 1; $i <= getN("bad"); $i++) {
-                                if (get_bath($i, "s_name") != "") {
+
+                            for ($i = 1; $i <= read_lengthByString("students", "customer_name", $_SESSION["username"]); $i++) {
                             ?>
-                                    <option value=<?php echo get_bath($i, "s_name"); ?>> <?php echo get_bath($i, "name"); ?> </option>
+                                <option value=<?php echo read_Students_ByCustomerNumber($i); ?>> <?php echo read_Students_ByCustomerNumber($i); ?> </option>
                             <?php
-                                }
                             }
                             ?>
                         </select>
                     </div>
-
-
                     <br>
                     <br>
                     <input name="submit" type="submit">
                 </form>
+
+
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $favoritbad    = array("favoritbad" => $_POST["favoritbad"]);
-                    insert_favoritbad($favoritbad["favoritbad"]);
-                    if (getP2(getK($_SESSION["id"])) == 1) {
+                    $student_name = $_POST["student_name"];
+                    $custemor_name = $_SESSION["username"];
+                    $number_orders = get_order_number($student_name, $custemor_name) + 1;
+
+                    insert_order($custemor_name, $student_name, $number_orders);
+                    $_SESSION["id"] = get_order_id($custemor_name, $student_name, $number_orders);
+
+
+
                 ?>
-                        <meta http-equiv="refresh" content="0; URL = rabatt.php" />
-                    <?php
-                    } else {
-                    ?>
-                        <meta http-equiv="refresh" content="0; URL = rabatt2.php" />
+                    <meta http-equiv="refresh" content="0; URL = favorit_bad.php" />
                 <?php
-                    }
                 }
                 ?>
             </div>

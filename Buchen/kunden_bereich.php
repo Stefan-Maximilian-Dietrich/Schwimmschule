@@ -45,7 +45,7 @@ if (isset($_SESSION["username"])) {
     <?php
     } elseif (isset($_POST['buchen'])) {
     ?>
-        <meta http-equiv="refresh" content="0; URL = kind_waelen.php" />
+        <meta http-equiv="refresh" content="0; URL = Kurs/kind_waelen.php" />
     <?php
     } elseif (isset($_POST['termine'])) {
     ?>

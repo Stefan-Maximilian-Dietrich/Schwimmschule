@@ -386,3 +386,54 @@ function insert_Zoom_date($date, $username)
 
     $conection->query($sql);
 }
+
+function insert_order_bad($order_id, $bad_id)
+{
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+
+    $sql = "INSERT INTO `order_bad` (`customer_id`, `bad_id`, `verfuegbar`, `favorit`) VALUES ($order_id, $bad_id, 0, 0);";
+
+    $conection->query($sql);
+}
+
+function update_favorit($order_id, $bad_id)
+{
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+    $sql = "UPDATE order_bad SET favorit = 1 WHERE customer_id = $order_id AND bad_id = $bad_id";
+
+    $conection->query($sql);
+}
+
+function update_bad($order_id, $bad_id)
+{
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+    $sql = "UPDATE order_bad SET verfuegbar = 1 WHERE customer_id = $order_id AND bad_id = $bad_id";
+
+    $conection->query($sql);
+}
+
+?>

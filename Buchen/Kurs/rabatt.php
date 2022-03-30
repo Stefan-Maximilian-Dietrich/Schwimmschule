@@ -23,22 +23,6 @@ if (isset($_SESSION["username"])) {
 
                 <form action="rabatt.php" method="post">
 
-                    <h3>Was sind deine Alternativbäder?</h3>
-                    <?php
-                    for ($i = 1; $i <= getN("bad"); $i++) {
-                        if (getS("bad", $i, "s_name") != getT("form", $_SESSION["id"], "favoritbad")) {
-                            if (get_bath($i, "s_name") != "") {
-                    ?>
-                                <label class="container">
-                                    <input type="checkbox" name=<?php echo get_bath($i, "s_name"); ?> value=TRUE> <?php echo get_bath($i, "name"); ?> <br>
-                                    <span class="checkmark"></span>
-                                </label>
-                    <?php
-                            }
-                        }
-                    }
-                    ?>
-
                     <h3>Zu welchen Zeiten kannst du??</h3>
                     <label class="container">
                         <input type="checkbox" name="zeitblock1" value=TRUE> Zeitblock 1 - Montag, Dienstag, Mittwoch<br>
@@ -133,20 +117,7 @@ if (isset($_SESSION["username"])) {
                 </form>
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $discount_bad  = array(
-                        "wertach" => istrue($_POST["wertach"]),
-                        "missen" => istrue($_POST["missen"]),
-                        "leutkirch" => istrue($_POST["leutkirch"]),
-                        "kirchdorf" => istrue($_POST["kirchdorf"]),
-                        "erkheim" => istrue($_POST["erkheim"]),
-                        "memmingenfrei" => istrue($_POST["memmingenfrei"]),
-                        "dietmansried" => istrue($_POST["dietmansried"]),
-                        "pfronten" => istrue($_POST["pfronten"]),
-                        "immenstadt" => istrue($_POST["immenstadt"]),
-                        "wangen" => istrue($_POST["wangen"]),
-                        "kemptencambo" => istrue($_POST["kemptencambo"]),
-                        "memmingenhalle" => istrue($_POST["memmingenhalle"])
-                    );
+
                     $discount_time = array(
                         "zeitblock1" => istrue($_POST["zeitblock1"]),
                         "zeitblock2" => istrue($_POST["zeitblock2"]),
@@ -170,8 +141,6 @@ if (isset($_SESSION["username"])) {
                         "b2u18" => istrue($_POST["b2u18"])
                     );
 
-                    insert_discount_bad($discount_bad);
-                    insert_fav_bad(getT("form", $_SESSION["id"], "favoritbad"));
                     insert_discount_time($discount_time);
 
                 ?>

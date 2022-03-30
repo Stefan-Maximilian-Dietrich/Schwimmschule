@@ -526,4 +526,42 @@ function print_table()
     mysqli_close($con);
     
 }
+
+function get_bath($i, $attribiute)
+{
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+
+    $id = $_SESSION["id"];
+    $course = getK($id);
+    $sql = "SELECT * FROM bad JOIN verfuegbar ON bad.s_name = verfuegbar.bath_name WHERE id = $i AND available = 1 AND course_name = '$course'";
+    $res = $conection->query($sql);
+    $object = $res->fetch_object();
+    return $object->$attribiute;
+}
+
+function read_alternativbad($favorit_id, $bad_id)
+{
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+    $sql = "SELECT * FROM favorit_alternativ WHERE favorit_id = $favorit_id AND alternativ_id = $bad_id";
+    $res = $conection->query($sql);
+    $object = $res->fetch_object();
+    return $object->verfuegbar;
+}
+
 ?>

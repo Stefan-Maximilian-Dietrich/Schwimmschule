@@ -63,9 +63,15 @@ if (isset($_SESSION["id"])) {
 
                     insert_id($id["id"]);
                     insert_kurs($kurs["kurs"]);
-                ?>
-                    <meta http-equiv="refresh" content="0; URL = bad.php" />
-                <?php
+                    if (getP2(getK($_SESSION["id"])) == 1) {
+                        ?>
+                                <meta http-equiv="refresh" content="0; URL = rabatt.php" />
+                            <?php
+                            } else {
+                            ?>
+                                <meta http-equiv="refresh" content="0; URL = rabatt2.php" />
+                        <?php
+                            }
                 } elseif (isset($_POST['hilfe'])) {
 					mail_hilfe();
 				}
