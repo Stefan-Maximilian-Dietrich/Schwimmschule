@@ -1,4 +1,4 @@
-<?php require(__DIR__ . "/../Funktionen/all.php"); ?>
+<?php require(__DIR__ . "/../../Funktionen/all.php"); ?>
 <?php
 session_start();
 if (isset($_SESSION["username"])) {
