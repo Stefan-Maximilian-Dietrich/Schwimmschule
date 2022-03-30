@@ -26,7 +26,7 @@ if (isset($_SESSION["username"])) {
                     <h3>Was sind deine Alternativbäder?</h3>
                     <?php
                     for ($i = 1; $i <= getN("bad"); $i++) {
-                        if (read_alternativbad($_SESSION["favoritbad"], $i++) == 1) {
+                        if (read_alternativbad($_SESSION["favoritbad"], $i) == 1) {
                     ?>
                             <label class="container">
                                 <input type="checkbox" name=<?php $i; ?> value= 1> <?php echo read_name_by_id($i, "bad"); ?> <br>
