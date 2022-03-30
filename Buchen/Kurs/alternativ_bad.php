@@ -29,7 +29,7 @@ if (isset($_SESSION["username"])) {
                         if (read_alternativbad($_SESSION["favoritbad"], $i++) == 1) {
                     ?>
                             <label class="container">
-                                <input type="checkbox" name=<?php $i++; ?> value= 1> <?php echo get_bath($i, "name"); ?> <br>
+                                <input type="checkbox" name=<?php $i; ?> value= 1> <?php echo read_name_by_id($i, "bad"); ?> <br>
                                 <span class="checkmark"></span>
                             </label>
                     <?php
