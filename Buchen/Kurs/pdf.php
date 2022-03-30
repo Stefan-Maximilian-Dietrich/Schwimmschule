@@ -1,6 +1,6 @@
 <?php
 ob_start();
-require(__DIR__. "/../Funktionen/all.php"); 
+require(__DIR__. "/../../Funktionen/all.php"); 
 session_start();
 
 
