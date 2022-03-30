@@ -52,7 +52,8 @@ if (isset($_SESSION["username"])) {
                 if (isset($_POST['Senden'])) {
                     $bezahlung     = array("einmalzahlung" => $_POST["einmalzahlung"]);
                     insert_bezahlung($bezahlung["einmalzahlung"]);
-                    evaluate();
+                    $n = read_number_bad($_SESSION["id"]) - 1;
+                    evaluate($n);
                     calculate();
                 ?>
                     <h4>Zu zahlen:</h4>
@@ -84,7 +85,7 @@ if (isset($_SESSION["username"])) {
                 }
                 if (isset($_POST['Fertig'])) {
                     ?>
-                    <meta http-equiv="refresh" content="0; URL = /../../kunden_bereich.php" />
+                    <meta http-equiv="refresh" content="0; URL = /../../Kurs/kunden_bereich.php" />
                     <?php
                 }
                 ?>

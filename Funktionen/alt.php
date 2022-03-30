@@ -89,7 +89,7 @@ function check($name1)
 }
 
 
-function evaluate()
+function evaluate($n)
 {
     global $severname;
     global $user;
@@ -127,10 +127,8 @@ function evaluate()
         array_push($baeder, $new);
     }
 
-    $n = 0;
-    for ($i = 0; $i < getN("bad"); $i++) {
-        $n = $n + getT("form", $_SESSION["id"], $baeder[$i]);
-    }
+
+    //
 
 if ($n >= 2) {
     $alt1 = 0;
