@@ -30,7 +30,7 @@ if (isset($_SESSION["username"])) {
                             <?php
                             for ($i = 1; $i <= getN("bad"); $i++) {
                             ?>
-                                    <option value= <?php echo $i; ?> > <?php echo get_bath($i, "name"); ?> </option>
+                                    <option value= <?php echo $i; ?> > <?php echo read_name_by_id($i, "bad"); ?> </option>
                             <?php
                                 }
                             ?>

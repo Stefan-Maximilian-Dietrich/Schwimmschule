@@ -545,4 +545,25 @@ function read_alternativbad($favorit_id, $bad_id) {
     return $object->verfuegbar;
 }
 
+
+function read_name_by_id($id, $tabel) {
+
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+   
+    $sql = "SELECT * FROM $tabel WHERE id = $id";
+    $res = $conection->query($sql);
+    $object = $res->fetch_object();
+    $result = $object->name;
+
+    return $result;
+}
+
 ?>
