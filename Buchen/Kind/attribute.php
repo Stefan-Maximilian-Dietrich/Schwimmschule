@@ -1,4 +1,4 @@
-<?php require(__DIR__. "/../Funktionen/all.php"); ?>
+<?php require(__DIR__. "/../../Funktionen/all.php"); ?>
 <?php
 session_start();
 if (isset($_SESSION["student_name"])) {
@@ -72,11 +72,10 @@ if (isset($_SESSION["student_name"])) {
                 
                     
                     $birth = read_StudentAtribute("birth");
-                    echo $birth ;
                     altersklasse_update($birth);
 
                 ?>
-                   <meta http-equiv="refresh" content="0; URL = kunden_bereich.php" />
+                   <meta http-equiv="refresh" content="0; URL = /../../Buchen/kunden_bereich.php" />
                 <?php
                 }
                 ?>

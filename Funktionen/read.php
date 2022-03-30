@@ -566,6 +566,26 @@ function read_name_by_id($id, $tabel) {
     return $result;
 }
 
+function read_attributes_by_ak($ak, $attribiute) {
+
+    global $severname;
+    global $user;
+    global $pw;
+    global $db;
+
+    $conection = new mysqli($severname, $user, $pw, $db);
+    if ($conection->connect_error) {
+        die("Verbindunsfehler: $conection->connect_error");
+    }
+   
+    $sql = "SELECT * FROM altersklassen WHERE ak = $ak";
+    $res = $conection->query($sql);
+    $object = $res->fetch_object();
+    $result = $object->$attribiute;
+
+    return $result;
+}
+
 function read_number_bad($order)
 { // Anzahl an einträgen Tabelle 
     global $severname;

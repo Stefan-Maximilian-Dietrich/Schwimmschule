@@ -41,7 +41,7 @@ if (isset($_SESSION["username"])) {
     <?php
     if (isset($_POST['neues'])) {
     ?>
-        <meta http-equiv="refresh" content="0; URL = kind.php" />
+        <meta http-equiv="refresh" content="0; URL = Kind/kind.php" />
     <?php
     } elseif (isset($_POST['buchen'])) {
     ?>

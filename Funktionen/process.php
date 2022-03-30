@@ -1,6 +1,7 @@
 <?php
 require("read.php");
 require("insert.php");
+require("alt.php"); 
 
 function course_available($course)
 {
@@ -41,25 +42,13 @@ function course_available($course)
 function calculate_altersklassen($days)
 {
 
-    if ($days <= read_altersklasse_ById(1)) {
-        return 1;
+
+    for($i = 1; $i <= getN("altersklassen"); $i++) {
+        if(read_attributes_by_ak($i, "days_bottom") <= $days && read_attributes_by_ak($i, "days_top") > $days) {
+            return $i;
+        }
     }
 
-    if ($days <= read_altersklasse_ById(2)) {
-        return 2;
-    }
-
-    if ($days <= read_altersklasse_ById(3)) {
-        return 3;
-    }
-
-    if ($days <= read_altersklasse_ById(4)) {
-        return 4;
-    }
-
-    if ($days <= read_altersklasse_ById(5)) {
-        return 5;
-    }
 }
 
 function altersklasse_update($birth)
