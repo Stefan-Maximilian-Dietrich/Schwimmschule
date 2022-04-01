@@ -67,12 +67,12 @@
 
 if (isset($_POST["submit"])) {
     add($_POST["name"]);
-    //if(mail_besaetigunh($_POST["name"]) == 1) {
+    if(mail_besaetigunh($_POST["name"]) == 1) {
         ?>
             <meta http-equiv="refresh" content="0; URL=email_erfolg.php" />
         <?php
     }
-//}
+}
     ?>
 
 </html>
