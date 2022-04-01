@@ -125,7 +125,13 @@ function mail_besaetigunh($name)
 Hallo,  <br> 
 
 <br>
-sch&ouml;n, dass Du detaillierteres Interesse an meinen Schwimmkursen hast. Vielleicht bist Du ja schon ein wenig auf meiner <br> Website <br> Schwimmschule-Allgaeu<br> in die &ldquo;Ich-bin-Anders-Schwimmschule&ldquo; eingetaucht und hast dabei festgestellt, DA L&Auml;UFT <br> TATS&Auml;CHLICH VIELES ANDERS. Wenn nicht, mag ich Dir das wirklich im Vorfeld empfehlen! <br>
+sch&ouml;n, dass Du detaillierteres Interesse an meinen Schwimmkursen hast. Vielleicht bist Du ja schon ein wenig auf meiner <br> Website <br> Schwimmschule-Allgaeu<br> in die &ldquo;Ich-bin-Anders-Schwimmschule&ldquo; eingetaucht und hast dabei festgestellt, DA L&Auml;UFT <br> 
+TATS&Auml;CHLICH VIELES ANDERS. Wenn nicht, mag ich Dir das wirklich im Vorfeld empfehlen! <br>
+Zun&auml;chst noch eine WIRKLICHE WICHTIGE ANGELEGENHEIT. <br>
+<br>
+Wenn Du E-Mails von den WASSERMENSCHEN bekommst, bitte ich Dich, ausschliesslich mit den dort genannten LINKS zu kommunizieren. <br>
+<br>
+Die DIREKTE Kommunikation, falls du allgemeine oder eben weitere Fragen hast, läuft über die E-Mail-Adresse deiner Schwimmschule. Oder eben über deren sonstigen Kan&auml;len (zb. info@schwimmschule-allgaeu.de) <br>
 <br>
 Um mich und meine Art des Schwimmunterrichts n&uuml;her kennenzulernen, und um Deine Fragen zu beantworten, veranstalte ich ZOOM- Calls. <br>
 <br>
@@ -251,6 +257,8 @@ zweiten Teil. Nimm Dir weitere 45 min Zeit. Je nach Fragen. Den Link dazu erh&au
 <br>
 <br>
 Wir sehen uns! ..per Zoom;)<br>
+<br>
+Deine Anmeldung läuft ausschließlich über den nachfolgenden Link und funktioniert nicht über eine schlichte Antwort-Mail. <br>
 <br>
 "
 		.
