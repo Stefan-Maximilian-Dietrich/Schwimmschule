@@ -1,5 +1,5 @@
 <?php
-// require("process.php");
+ require("process.php");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

@@ -1,7 +1,7 @@
 <?php
 require("read.php");
 require("insert.php");
-require("alt.php"); 
+// require("alt.php");
 
 function course_available($course)
 {
