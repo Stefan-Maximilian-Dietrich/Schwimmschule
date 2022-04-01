@@ -252,8 +252,6 @@ zweiten Teil. Nimm Dir weitere 45 min Zeit. Je nach Fragen. Den Link dazu erh&au
 <br>
 Wir sehen uns! ..per Zoom;)<br>
 <br>
-Deine Anmeldung läuft ausschließlich über den nachfolgenden Link und funktioniert nicht über eine schlichte Antwort-Mail. <br>
-<br>
 "
 		.
 		"https://wassermenschen.org/Dialog/termine.php/?mail=" . $name .
