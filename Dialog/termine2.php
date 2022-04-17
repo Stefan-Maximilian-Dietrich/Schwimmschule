@@ -26,11 +26,11 @@ session_start();
 
 
                 <h3>Nächster Mittwoch 20:30</h3> <br>
-                Am <?php echo date("d.m.Y", strtotime("6 April 2022")); ?>
+                Am <?php echo date("d.m.Y", strtotime("next wednesday")); ?>
                     <input type="submit" class="theButton" name="monday" value="anmelden" <?php ?>>
 
                 <h3>Nächster Sonntag 20:30</h3> <br>
-                Am <?php echo date("d.m.Y", strtotime("10 April 2022")); ?>
+                Am <?php echo date("d.m.Y", strtotime("next sunday")); ?>
 
                     <input type="submit" class="theButton" name="wednesday" value="anmelden" <?php ?>>
 
@@ -43,8 +43,8 @@ session_start();
     </html>
     <?php
     if (isset($_POST['monday'])) {
-        insert_Zoom_date(date('Y-m-d',strtotime("6 April 2022")), $_SESSION["mail"]);
-        $_SESSION["tag"] = date('Y-m-d',strtotime("6 April 2022"))
+        insert_Zoom_date(date('Y-m-d',strtotime("next wednesday")), $_SESSION["mail"]);
+        $_SESSION["tag"] = date('Y-m-d',strtotime("next wednesday"))
         ?>
             <meta http-equiv="refresh" content="0; URL= /../Dialog/zoom_erfolg.php" />
         <?php
@@ -52,8 +52,8 @@ session_start();
         
     <?php
     } elseif (isset($_POST['wednesday'])) {
-        insert_Zoom_date(date('Y-m-d',strtotime("10 April 2022")), $_SESSION["mail"]);
-        $_SESSION["tag"] = date('d.m.Y',strtotime("10 April 2022"))
+        insert_Zoom_date(date('Y-m-d',strtotime("next sunday")), $_SESSION["mail"]);
+        $_SESSION["tag"] = date('d.m.Y',strtotime("next sunday"))
     ?>
         <meta http-equiv="refresh" content="0; URL= /../Dialog/zoom_erfolg.php" />
     <?php
