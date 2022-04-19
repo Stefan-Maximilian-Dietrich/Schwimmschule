@@ -51,7 +51,7 @@ if (isset($_SESSION["username"])) {
 
 						<?php
     if (isset($_POST['hinzufuegen'])) {
-           add($_POST["name"]);
+           add($_POST["name"], "0");
     } elseif (isset($_POST['zurueck'])) {
     ?>
         <meta http-equiv="refresh" content="0; URL = backoffice.php" />
