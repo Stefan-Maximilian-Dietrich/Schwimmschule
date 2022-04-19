@@ -1,7 +1,7 @@
 <?php
 require("login_info.php");
 
-function add($name)
+function add($name, $mobil)
 {
 
     global $severname;
@@ -14,7 +14,7 @@ function add($name)
         die("Verbindunsfehler: $conection->connect_error");
     }
 
-    $sql = "INSERT INTO customer (username) VALUES ('$name')";
+    $sql = "INSERT INTO customer (username, mobil) VALUES ('$name', '$mobil')";
 
     if ($conection->query($sql) === TRUE) {
         echo "$name Erolgreich hinzugefügt";

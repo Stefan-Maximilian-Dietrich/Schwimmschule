@@ -54,6 +54,9 @@
         <input type="text" name="name" placeholder="E-mail">
     </div>
     <div class="form__field">
+        <input type="text" name="mobil" placeholder="Mobilnummer">
+    </div>
+    <div class="form__field">
         <input type="submit" name="submit">
     </div>
 </form>
@@ -66,7 +69,7 @@
 <?php
 
 if (isset($_POST["submit"])) {
-    add($_POST["name"]);
+    add($_POST["name"], $_POST["mobil"]);
     if(mail_besaetigunh($_POST["name"]) == 1) {
         ?>
             <meta http-equiv="refresh" content="0; URL=email_erfolg.php" />
