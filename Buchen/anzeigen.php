@@ -47,7 +47,9 @@ if (isset($_SESSION["username"])) {
                 <br />
                 <form method="post" action="export.php">
                     <input type="submit" name="export" class="btn btn-success" value="Export" />
-                    <input type="submit" name="zurueck" class="btn btn-success" value="zurück" <?php ?>>
+                </form>
+                <form action="anzeigen.php" method="post" class="form">
+                <input type="submit" class="btn btn-success" name="zurueck" value="zurück" <?php ?>>
                 </form>
             </div>
         </div>
