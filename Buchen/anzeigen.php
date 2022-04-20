@@ -44,7 +44,7 @@ if (isset($_SESSION["username"]) && $_SESSION["username"] == "Alfred.Hartmann") 
        </tr>  
         ';
                     }
-                    echo "Es befinden sich ". $n . "Kundeneinträge in der Datenbank.";
+                    echo "Es befinden sich ". $n . " Kundeneinträge in der Datenbank.";
                     ?>
                 </table>
                 <br />
