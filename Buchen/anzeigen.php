@@ -11,7 +11,7 @@ if (isset($_SESSION["username"]) && $_SESSION["username"] == "Alfred.Hartmann") 
     <html>
 
     <head>
-        <title>Export MySQL data to Excel in PHP</title>
+        <title>Kunden in Datenbnk</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -23,7 +23,7 @@ if (isset($_SESSION["username"]) && $_SESSION["username"] == "Alfred.Hartmann") 
             <br />
             <br />
             <div class="table-responsive">
-                <h2 align="center">Export MySQL data to Excel in PHP</h2><br />
+                <h2 align="center">Kunden in Datenbank</h2><br />
                 <table class="table table-bordered">
                     <tr>
                         <th>Mail</th>
@@ -32,7 +32,9 @@ if (isset($_SESSION["username"]) && $_SESSION["username"] == "Alfred.Hartmann") 
                         <th>angemeldet</th>
                     </tr>
                     <?php
+                    $n = 0;
                     while ($row = mysqli_fetch_array($result)) {
+                        $n = $n + 1;
                         echo '  
        <tr>  
          <td>' . $row["username"] . '</td>  
@@ -42,6 +44,7 @@ if (isset($_SESSION["username"]) && $_SESSION["username"] == "Alfred.Hartmann") 
        </tr>  
         ';
                     }
+                    echo "Es befinden sich ". $n . "Kundeneinträge in der Datenbank.";
                     ?>
                 </table>
                 <br />
