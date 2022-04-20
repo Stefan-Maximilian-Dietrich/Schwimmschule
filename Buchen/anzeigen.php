@@ -1,7 +1,7 @@
 <?php require(__DIR__ . "/../Funktionen/all.php"); ?>
 <?php
 session_start();
-if (isset($_SESSION["username"])) {
+if (isset($_SESSION["username"]) && $_SESSION["username"] == "Alfred.Hartmann") {
     $connect = mysqli_connect("localhost", "admin1", "l6$1Bp6g", "Schwimmschule"); 
     $sql = "SELECT * FROM customer"; 
     $result = mysqli_query($connect, $sql);
