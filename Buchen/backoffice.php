@@ -67,7 +67,7 @@ if (isset($_SESSION["username"])) {
     <?php
     } elseif (isset($_POST['zurueck'])) {
     ?>
-        <meta http-equiv="refresh" content="0; URL = kunden_anzeigen.php" />
+        <meta http-equiv="refresh" content="0; URL = anzeigen.php" />
     <?php
     }
 	?>

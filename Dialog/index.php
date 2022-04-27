@@ -68,7 +68,7 @@
 
 <?php
 
-if (isset($_POST["submit"])) {
+if (isset($_POST["submit"]) && isset($_POST["name"]) && isset($_POST["mobil"])) {
     add($_POST["name"], $_POST["mobil"]);
     if(mail_besaetigunh($_POST["name"]) == 1) {
         ?>
